@@ -5,4 +5,3 @@ from .models import Veterinario
 class VetAdmin(admin.ModelAdmin):
     list_display = ('nome', 'sobrenome', 'crmv', 'especialidade')
     base_model = Veterinario
-
