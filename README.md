@@ -1,20 +1,25 @@
 # Tabela de conteúdos
    * [Introdução](#Introdução)
       * [Tecnologias utilizadas](##Tecnologias-utilizadas)
-   * [Entidades](#Entidades)
-   * [Funcionalidades](#Funcionalidades)
+      * [Entidades](#Entidades)
+      * [Funcionalidades](#Funcionalidades)
    * [Como utilizar](#Como-utilizar)
-      * [Clonando repositório](##Clonando-repositório)  
+      * [Instalando Docker](##Instalando-Docker) 
+         * [Instalando Docker no Ubuntu](###-Instalando-Docker-no-Ubuntu)
+         * [Instalando Docker-Compose no Ubuntu](###Instalando-Docker-Compose-no-Ubuntu)
+         * [Instalando Docker e Docker-Compose no Windows](###Instalando-Docker-e-Docker-Compose-no-Windows)
+      * [Executando o projeto](##Executando-o-projeto)
 
 
 # Introdução
 O sistema apresentado nesse repositório simula o ambiente de uma Clinica veterinária. Tal sistema é uma API-Rest construída em python, fazendo uso do framework Django.
 
 ## Tecnologias utilizadas
-- [Djando](www.google.com.br)
-- [Django Rest Framework]
-- Postgresql
-- Docker.
+- [Djando Framework](https://www.djangoproject.com/)
+- [Django Rest Framework](https://www.django-rest-framework.org/)
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Postgresql](https://www.postgresql.org/)
 
 
 # Entidades
@@ -37,10 +42,13 @@ Os seguintes casos de uso foram satisfeitos por esse projeto:
 # Como Utilizar
 
 ## Instalando Docker
-Para utilizar esse projeto é necessário possuir *Docker* e *Docker-Compose* instalados.
+Para utilizar esse projeto é necessário possuir *Docker* e *Docker-Compose* instalados. Essa seção exemplifica algumas maneiras de instala-los, caso ja possua as dependencias instaladas, avançe para a seção [Executando o projeto](##Executando-o-projeto)
 
-### Instalando Docker no Ubuntu (e distros baseadas em Debian)
-Como desenvolvi a aplicação toda em um sistema Ubuntu 20.04 LTS acredito que a maneira mais simples de instalar as dependências seja através do script oficial de instalação.
+### Instalando Docker no Ubuntu
+Como desenvolvi a aplicação toda em um sistema Ubuntu 20.04 LTS, abaixo descrevo como realizar a instalação. Entretanto, esses passos também funcionam com outras distros linux baseadas em Debian, assim como Ubuntu.
+
+<br/>
+Acredito que a maneira mais simples de instalar as dependências seja através do script oficial de instalação.
 
 1. Execute os comandos
    ```bash
@@ -48,7 +56,7 @@ Como desenvolvi a aplicação toda em um sistema Ubuntu 20.04 LTS acredito que a
    $ sudo sh get-docker.sh
    ```
 
-<br />
+<br/>
 
 2. Verifique se está corretamente instalado com o comando
    ```bash
@@ -58,15 +66,15 @@ Como desenvolvi a aplicação toda em um sistema Ubuntu 20.04 LTS acredito que a
 Se problemas forem encontrados nesse formato de instalação, consulte a documentação oficial.
 https://docs.docker.com/engine/install/ubuntu/
 
-### Instalando Docker-Compose no Ubuntu (e distros baseadas em Debian)
-
+### Instalando Docker-Compose no Ubuntu
+Os passos abaixo também funcionam para outras distros basiadas em Debian.
 
 1. Baixe o arquivo binário com o comando comandos
    ```bash
    $ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
    ```
 
-<br />
+<br/>
 
 2. Conceda as permissões para que o arquivo binário baixado possa executar
    ```bash
@@ -82,12 +90,16 @@ No Windows existe a ferramenta *Docker Desktop* a qual abrange tanto *Docker* qu
 
 2. Com a ferramenta instalada, realize um clique duplo sobre o icone gerado e o mesmo será inicializado.
 
-## Clonando repositório
+Obs: Por padrão a ferramenta *Docker Desktop* utiliza o *WSL 2* (Subsistema  Linux existente no Windows 10) então certifique-se de que ele esteja funcionando e configurado corretamente.
+
+## Executando o projeto
+Com o *git* devidamente instalado, clone o repositório
 ```bash
-git clone
+git clone https://github.com/ViniciusMarchi/django-restapi-compdist.git
+cd django-restapi-compdist
 ```
 
-## Executando
+
 Realize o build do projeto
 ```bash
 docker-compose build
