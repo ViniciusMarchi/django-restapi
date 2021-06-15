@@ -1,7 +1,7 @@
 # Tabela de conteúdos
-   * [Introdução](#Introdução)
-      * [Tecnologias utilizadas](##Tecnologias-utilizadas)
-      * [Entidades](#Entidades)
+   * [Introdução](#introdução)
+      * [Tecnologias utilizadas](##tecnologias-utilizadas)
+      * [Entidades](#entidades)
       * [Funcionalidades](#Funcionalidades)
    * [Como utilizar](#Como-utilizar)
       * [Instalando Docker](##Instalando-Docker) 
