@@ -42,7 +42,7 @@ Os seguintes casos de uso foram satisfeitos por esse projeto:
 # Como Utilizar
 
 ## Instalando Docker
-Para utilizar esse projeto é necessário possuir *Docker* e *Docker-Compose* instalados. Essa seção exemplifica algumas maneiras de instala-los, caso ja possua as dependencias instaladas, avançe para a seção [Executando o projeto](##Executando-o-projeto)
+Para utilizar esse projeto é necessário possuir *Docker* e *Docker-Compose* instalados. Essa seção exemplifica algumas maneiras de instala-los, caso ja possua as dependencias instaladas, avançe para a seção [Executando o projeto](#Executando-o-projeto)
 
 ### Instalando Docker no Ubuntu
 Como desenvolvi a aplicação toda em um sistema Ubuntu 20.04 LTS, abaixo descrevo como realizar a instalação. Entretanto, esses passos também funcionam com outras distros linux baseadas em Debian, assim como Ubuntu.
