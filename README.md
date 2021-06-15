@@ -1,14 +1,14 @@
 # Tabela de conteúdos
    * [Introdução](#introdução)
-      * [Tecnologias utilizadas](##tecnologias-utilizadas)
+      * [Tecnologias utilizadas](#tecnologias-utilizadas)
       * [Entidades](#entidades)
       * [Funcionalidades](#Funcionalidades)
    * [Como utilizar](#Como-utilizar)
-      * [Instalando Docker](##Instalando-Docker) 
-         * [Instalando Docker no Ubuntu](###-Instalando-Docker-no-Ubuntu)
-         * [Instalando Docker-Compose no Ubuntu](###Instalando-Docker-Compose-no-Ubuntu)
-         * [Instalando Docker e Docker-Compose no Windows](###Instalando-Docker-e-Docker-Compose-no-Windows)
-      * [Executando o projeto](##Executando-o-projeto)
+      * [Instalando Docker](#Instalando-Docker) 
+         * [Instalando Docker no Ubuntu](#Instalando-Docker-no-Ubuntu)
+         * [Instalando Docker-Compose no Ubuntu](#Instalando-Docker-Compose-no-Ubuntu)
+         * [Instalando Docker e Docker-Compose no Windows](#Instalando-Docker-e-Docker-Compose-no-Windows)
+      * [Executando o projeto](#Executando-o-projeto)
 
 
 # Introdução
